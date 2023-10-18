@@ -1,4 +1,8 @@
 #!/usr/bin/python
+# Carlos Enamorado 
+# 10/17/2023
+# Fuzzing for Buffer Overflow PoC
+# Script will report the size of the buffer at which the service crashed
 
 import sys, socket
 from time import sleep
