@@ -15,7 +15,7 @@ In the case of VulnServer and for the purpose of these scripts moving forward, t
 import sys, socket
 from time import sleep
 
-offset = "" #offset here
+offset = "" # This will be the results of '~/pattern_create.rb -l <fuzzer.py_results>' (This may be a huge string of HEX)
 
 try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
